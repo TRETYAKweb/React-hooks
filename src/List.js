@@ -53,19 +53,23 @@ export const List = () => {
 
   React.useEffect(() => {
     console.log(`Компонент обновился`);
+  });
 
-    return () => {
-      console.log(`Компонент будет удален`);
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   console.log(`Компонент обновился`);
 
-  React.useEffect(() => {
-    console.log(`Счётчик обновился: ${count}`);
-  }, [count]);
+  //   return () => {
+  //     console.log(`Компонент будет удален`);
+  //   };
+  // }, []);
 
-  React.useEffect(() => {
-    console.log(`Добавилось новое число: ${numbers[numbers.length - 1]}`);
-  }, [numbers]);
+  // React.useEffect(() => {
+  //   console.log(`Счётчик обновился: ${count}`);
+  // }, [count]);
+
+  // React.useEffect(() => {
+  //   console.log(`Добавилось новое число: ${numbers[numbers.length - 1]}`);
+  // }, [numbers]);
 
   return (
     <>
